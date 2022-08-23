@@ -1,0 +1,113 @@
+@use '../global/borders' as b;
+@use '../global/colors' as c;
+
+form {
+display: flex;
+flex-direction: column;
+
+    & > * {
+        margin: 0 0 2.5rem 0;
+    }
+
+    & * {
+        font-family: inherit;
+        font-size: 1.6rem;
+        font-weight: 300;
+
+    }
+}
+
+.form-item {
+    position: relative;
+}
+
+input {
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    border: 1px solid var(--grey-light);
+    background-color: var(--white);
+    color: var(--black);
+    padding: 2rem;
+    border-radius: b.$radius-medium;
+
+    &:focus {
+        outline: 2px solid var(--brand-light);
+    }
+}
+
+input:focus ~ label, input:not(:focus):required:valid ~ label, input:not(:placeholder-shown):valid ~ label {
+    left: 0.5rem;
+    padding: 0.2rem 1.5rem;
+    background-color: var(--white);
+    transform: scale(0.8) translateY(-4rem);
+    transform-origin: 3rem center;
+    color: var(--brand-light);
+}
+
+input:required ~ label:after {
+    content: ' *';
+    font-size: 1.2rem;
+    color: red;
+}
+
+label {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    margin: 0;
+    transition: transform 150ms cubic-bezier(0.4,0,0.2,1),opacity 150ms cubic-bezier(0.4,0,0.2,1);
+    pointer-events: none;
+    color: var(--grey-dark);
+}
+
+button {
+    border: 0;
+    background-color: var(--grey-light);
+    border-bottom: b.$border-button solid darken(#ededed, 10%);
+    padding: 1.5rem 2.5rem 1.5rem 2rem;
+    margin-bottom: 0;
+    border-radius: b.$radius-medium;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: fit-content;
+    transition: all ease 0.3s;
+
+    i {
+        margin-left: 1.5rem;
+        transition: all ease 0.3s;
+    }
+
+    &:hover,&:focus {
+        filter: brightness(0.9);
+        cursor: pointer;
+
+        i {
+            transition: linear all 1s;
+            animation: submit 1s 1;
+            animation-iteration-count: infinite;
+        }
+    }
+}
+
+#submit {
+    color: #fff;
+    background-color: var(--brand);
+    border-bottom: b.$border-button solid darken(#00558a, 10%);
+    font-size: 1.8rem;
+}
+
+@keyframes submit {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(8px);
+    }
+
+    100% {
+        transform: translateX(0px)
+    }
+}

@@ -1,0 +1,5 @@
+@use '../global/colors' as c;
+
+.heading-section {
+    border-bottom: 2px solid var(--grey-light);
+}

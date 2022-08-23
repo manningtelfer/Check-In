@@ -1,0 +1,16 @@
+@use '../global/borders' as b;
+@use '../global/colors' as c;
+
+.box {
+    background: var(--white);
+    border-bottom: 4px solid var(--grey-light);
+    border-radius: b.$radius-medium;
+    box-shadow: b.$shadow-medium;
+    padding: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .box {
+        padding: 3rem;
+    }
+}

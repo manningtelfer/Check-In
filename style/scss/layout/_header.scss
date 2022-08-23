@@ -1,0 +1,48 @@
+header {
+    margin: 3rem auto;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+}
+
+.title {
+
+    &-container {
+        flex: 3;
+    }
+}
+
+.subtitle {
+    font-size: 2rem;
+    margin-bottom: 0;
+    line-height: 2.2rem;
+}
+
+.logo {
+    max-width: 130px;
+    margin-top: 3rem;
+
+    &-container {
+        flex: 1;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .header-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo {
+        margin-top: 0;
+
+        &-container {
+            text-align: right;
+            margin: 0;
+        }
+    }
+}

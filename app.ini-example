@@ -1,0 +1,9 @@
+[database]
+db_server= ''
+db_name=   ''
+db_user=   ''
+db_pass=   ''
+
+[application]
+url_logo=       '/img/logo.png'
+url_privacy=    '#'

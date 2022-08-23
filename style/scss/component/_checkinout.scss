@@ -1,0 +1,76 @@
+@use '../global/colors' as c;
+
+.check-in-out-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.check-in {
+    flex: 3;
+    padding-bottom: 3rem;
+    border-right: none;
+}
+
+.check-out {
+    flex: 4;
+    padding-top: 3rem;
+}
+
+.check-out-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--grey-light);
+}
+
+.check-out-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 2;
+
+    &-name {
+        display: flex;
+
+        &-label {
+            min-width: 75px;
+            margin: 0 1rem 0.5rem 0;
+            font-weight: bold;
+        }
+    }
+
+    &-company {
+        display: flex;
+
+        &-label {
+            min-width: 75px;
+            margin: 0 1rem 0.5rem 0;
+            font-weight: bold;
+        }
+    }
+}
+
+.check-out-button {
+    height: 52px;
+}
+
+@media only screen and (min-width: 768px) {
+    .check-in-out-container {
+        flex-direction: row;
+    }
+
+    .check-in {
+        padding-right: 3rem;
+        padding-bottom: 0;
+        border-right: 2px solid var(--grey);
+        border-bottom: none;
+    }
+    
+    .check-out {
+        padding-left: 3rem;
+        padding-top: 0;
+    }
+}

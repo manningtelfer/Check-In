@@ -1,0 +1,20 @@
+@use '../global/colors' as c;
+
+.confirmation {
+    text-align: center;
+
+    i{
+        font-size: 48pt;
+        margin-bottom: 2rem;
+        color: var(--success);
+    }
+}
+
+.confirmed-time {
+    margin: 2rem 0;
+    display: inline-block;
+
+    & > * {
+        display: inline;
+    }
+}
