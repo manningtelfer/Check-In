@@ -1,5 +1,16 @@
 # Check-In
-A simple web based utility to log visitors to your place of business
+A simple web based utility to log visitors to your place of business.
+
+## Features
+- Desktop and mobile friendly
+- Dark mode
+- WSAG 2.1 complianiance
+
+### Future features
+- Admin page to review check in history
+- Data encryption
+- More robust input validation
+- More robust input sanitisation
 
 ## Installation
 
