@@ -4,7 +4,7 @@ A simple web based utility to log visitors to your place of business.
 ## Features
 - Desktop and mobile friendly
 - Dark mode
-- WSAG 2.1 complianiance
+- WSAG 2.1 compliance
 
 ### Future features
 - Admin page to review check in history
