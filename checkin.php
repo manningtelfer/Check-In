@@ -1,7 +1,7 @@
 <?php
-$ini = parse_ini_file('app.ini');
-$servername = $ini['db_server'];
-$connection = array( "Database"=>$ini['db_name'], "UID"=>$ini['db_user'], "PWD"=>$ini['db_pass']);
+$app = parse_ini_file('app.ini');
+$servername = $app['db_server'];
+$connection = array( "Database"=>$app['db_name'], "UID"=>$app['db_user'], "PWD"=>$app['db_pass']);
 $name = $_POST['name'];
 $company = $_POST['company'];
 $phone = $_POST['number'];

@@ -1,4 +1,4 @@
-<?php $ini = parse_ini_file('app.ini'); $url_logo = $ini['url_logo'];?>
+<?php $app = parse_ini_file('app.ini'); $url_logo = $app['url_logo'];?>
 <div class="header-container container">
     <div class="title-container">
         <h1 class="title">Welcome</h1>
