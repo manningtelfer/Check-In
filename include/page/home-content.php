@@ -6,11 +6,11 @@
             </section>
             <form class="check-in-form" name="Check in" action="checkin.php" method="POST">
                 <div class="form-item">
-                    <input type="text" name="name" id="name" maxlength="32" title="Provide your first and last name." autocomplete="name" required>
+                    <input type="text" name="name" id="name" maxlength="32" title="Provide your first and last name." autocomplete="name" required oninvalid="this.setCustomValidity('Provide your first and last name.')" oninput="this.setCustomValidity('')">
                     <label>Name</label>
                 </div>
                 <div class="form-item">
-                    <input type="text" name="number" id="number" autocomplete="tel" required>
+                    <input type="text" name="number" id="number" title="Provide a valid phone number." autocomplete="tel" required oninvalid="this.setCustomValidity('Provide a valid phone number.')" oninput="this.setCustomValidity('')">
                     <label>Phone</label>
                 </div>
                 <div class="form-item">
