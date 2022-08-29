@@ -44,7 +44,24 @@
                     
                     // output data of each row
                     while($row = sqlsrv_fetch_array($result)) {
-                        echo '<div class="check-out-container"><div class="check-out-details"><div class="check-out-details-name"><div class="check-out-details-name-label">Name:</div><div class="check-out-details-name-value">' . $row['name']. '</div></div><div class="check-out-details-company"><div class="check-out-details-company-label">Company:</div><div class="check-out-details-name-value">' . $row['company'].'</div></div></div><form class="check-out-form" name="Check out" action="checkout.php" method="POST"><input class="visibly-hidden" name="id" value="' . $row['id'].'"><button class="check-out-button" type="submit" name="checkout">Check out<i class="fa-solid fa-right-from-bracket fa-fw"></i></button></form></div>';
+                        echo '
+                        <div class="check-out-container">
+                        <div class="check-out-details">
+                            <div class="check-out-details-name">
+                                <div class="check-out-details-name-label">Name:</div>
+                                    <div class="check-out-details-name-value">' . $row['name']. '</div>
+                                </div>
+                                <div class="check-out-details-company">
+                                    <div class="check-out-details-company-label">Company:</div>
+                                    <div class="check-out-details-name-value">' . $row['company'].'</div>
+                                </div>
+                            </div>
+                            <form class="check-out-form" name="Check out" action="checkout.php" method="POST">
+                                <input class="visibly-hidden" name="id" value="' . $row['id'].'">
+                                <button class="check-out-button" type="submit" name="checkout">Check out<i class="fa-solid fa-right-from-bracket fa-fw"></i></button>
+                            </form>
+                        </div>
+                        ';
                     }
                     } else {
                     echo "<p>No visitors are currently checked-in.</p>";

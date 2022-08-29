@@ -6,10 +6,10 @@
 	</head>
 	<body>
         <header>
-			<?php include ($_SERVER['DOCUMENT_ROOT'].'/include/component/confirm-checkin-header.html')?>
+			<?php include ($_SERVER['DOCUMENT_ROOT'].'/include/component/confirm-checkin-header.php')?>
 		</header>
 		<main id="main-content">
-			<?php include ($_SERVER['DOCUMENT_ROOT'].'/include/page/confirm-checkin-content.html')?>
+			<?php include ($_SERVER['DOCUMENT_ROOT'].'/include/page/confirm-checkin-content.php')?>
 		</main>
 		<footer>
 			<?php include ($_SERVER['DOCUMENT_ROOT'].'/include/component/footer.php')?>
