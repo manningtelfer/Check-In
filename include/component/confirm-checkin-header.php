@@ -5,6 +5,6 @@
         <p class="subtitle">Thank you for checking in</p>
     </div>
     <div class="logo-container">
-        <img class="logo" src="img/logo.png" alt="logo">
+        <img class="logo" src="<?php echo $url_logo ?>" alt="logo">
     </div>
 </div>
