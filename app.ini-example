@@ -3,6 +3,7 @@ db_server= ''
 db_name=   ''
 db_user=   ''
 db_pass=   ''
+db_trustcert= '1' ;Whether or not to trust the SQL Server certificate. Should be set to 1(True) if certificate is self-signed. 
 
 [application]
 url_logo=       '/img/logo.png'

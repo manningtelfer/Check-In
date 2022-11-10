@@ -28,7 +28,7 @@
                 <?php
                     $app = parse_ini_file('app.ini');
                     $servername = $app['db_server'];
-                    $connection = array( "Database"=>$app['db_name'], "UID"=>$app['db_user'], "PWD"=>$app['db_pass']);
+                    $connection = array( "Database"=>$app['db_name'], "UID"=>$app['db_user'], "PWD"=>$app['db_pass'], "TrustServerCertificate"=>$app['db_trustcert']);
 
                     // Create connection
                     $conn = sqlsrv_connect($servername, $connection);
