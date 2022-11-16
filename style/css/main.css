@@ -313,7 +313,7 @@ section {
   --off-black: hsl(210, 11%, 18%);
   --grey-dark: hsl(0, 0%, 28%);
   --grey: hsl(0, 0%, 73%);
-  --grey-light: hsl(0, 0%, 93%);
+  --grey-light: rgb(237, 237, 237);
   --off-white: hsl(0, 0%, 97%);
   --white: hsl(0, 0%, 100%);
   --brand: hsl(210, 11%, 18%);
