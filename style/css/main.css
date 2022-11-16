@@ -31,7 +31,7 @@ header {
 }
 
 .logo {
-  max-width: 130px;
+  max-height: 75px;
   margin-top: 3rem;
 }
 .logo-container {
@@ -39,13 +39,13 @@ header {
   text-align: left;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 340px) {
   .header-container {
     flex-direction: row;
-    align-items: center;
   }
   .logo {
     margin-top: 0;
+    margin-left: 2rem;
   }
   .logo-container {
     text-align: right;
@@ -143,7 +143,7 @@ header {
 .confirmation i {
   font-size: 48pt;
   margin-bottom: 2rem;
-  color: var(--sucess);
+  color: var(--success);
 }
 
 .confirmed-time {
@@ -272,8 +272,8 @@ button:hover i, button:focus i {
 
 #submit {
   color: #fff;
-  background-color: var(--brand);
-  border-bottom: 5px solid #003657;
+  background-color: var(--brand-light);
+  border-bottom: 5px solid var(--brand);
   font-size: 1.8rem;
 }
 
@@ -316,9 +316,9 @@ section {
   --grey-light: hsl(0, 0%, 93%);
   --off-white: hsl(0, 0%, 97%);
   --white: hsl(0, 0%, 100%);
-  --brand: hsl(202, 100%, 27%);
-  --brand-light: hsl(202, 100%, 27%);
-  --sucess: hsl(143, 97%, 36%);
+  --brand: hsl(210, 11%, 18%);
+  --brand-light: hsl(0, 0%, 28%);
+  --success: hsl(143, 97%, 36%);
 }
 
 @media (prefers-color-scheme: dark) {

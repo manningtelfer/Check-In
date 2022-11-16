@@ -1,5 +1,4 @@
 @use '../global/borders' as b;
-@use '../global/colors' as c;
 
 form {
 display: flex;
@@ -93,8 +92,8 @@ button {
 
 #submit {
     color: #fff;
-    background-color: var(--brand);
-    border-bottom: b.$border-button solid darken(#00558a, 10%);
+    background-color: var(--brand-light);
+    border-bottom: b.$border-button solid var(--brand);
     font-size: 1.8rem;
 }
 
