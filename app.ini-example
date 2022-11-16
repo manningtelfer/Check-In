@@ -1,9 +1,11 @@
 [database]
 db_server= ''
+db_port=   ''
 db_name=   ''
 db_user=   ''
 db_pass=   ''
-db_trustcert= '1' ;Whether or not to trust the SQL Server certificate. Should be set to 1(True) if certificate is self-signed. 
+db_trustcert= '' ;Whether or not to trust the SQL Server certificate. Should be set to 1(True) if certificate is self-signed. 
+db_engine= '' ;0=MSSQL 1=MySQL
 
 [application]
 url_logo=       '/img/logo.png'
